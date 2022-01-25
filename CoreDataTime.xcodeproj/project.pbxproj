@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0650A8127A06D620083B652 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0650A8027A06D620083B652 /* CoreDataStack.swift */; };
 		A073FE0227A064D500DDC1A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A073FE0127A064D500DDC1A7 /* AppDelegate.swift */; };
 		A073FE0427A064D500DDC1A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A073FE0327A064D500DDC1A7 /* SceneDelegate.swift */; };
 		A073FE0627A064D500DDC1A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A073FE0527A064D500DDC1A7 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0650A8027A06D620083B652 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		A073FDFE27A064D500DDC1A7 /* CoreDataTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A073FE0127A064D500DDC1A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A073FE0327A064D500DDC1A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				A073FE0127A064D500DDC1A7 /* AppDelegate.swift */,
+				A0650A8027A06D620083B652 /* CoreDataStack.swift */,
 				A073FE0327A064D500DDC1A7 /* SceneDelegate.swift */,
 				A073FE0527A064D500DDC1A7 /* ViewController.swift */,
 				A073FE0727A064D500DDC1A7 /* Main.storyboard */,
@@ -141,6 +144,7 @@
 				A073FE0627A064D500DDC1A7 /* ViewController.swift in Sources */,
 				A073FE0227A064D500DDC1A7 /* AppDelegate.swift in Sources */,
 				A073FE0427A064D500DDC1A7 /* SceneDelegate.swift in Sources */,
+				A0650A8127A06D620083B652 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
