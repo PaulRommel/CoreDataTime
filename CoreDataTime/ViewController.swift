@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         fetchRequest.predicate = NSPredicate(format: "name == %@", userName)
 
         do {
-            let results = try context.fetch(fetchRequest)
+            let results = try! context.fetch(fetchRequest)
             if results.isEmpty {
                 user = User(context: context)
                 user.name = userName
