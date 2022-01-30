@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         fetchRequest.predicate = NSPredicate(format: "name == %@", userName)
 
         do {
-            let results = try! context.fetch(fetchRequest)
+            let results = try context.fetch(fetchRequest)
             if results.isEmpty {
                 user = User(context: context)
                 user.name = userName
@@ -82,5 +82,18 @@ extension ViewController: UITableViewDataSource {
 
         cell.textLabel!.text = dateFormatter.string(from: mealData)
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard let meal = user.meals?[indexPath.row] as? Meal, editingStyle == .delete else { return }
+
+        context.delete(meal)
+
+        do {
+            try context.save()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
     }
 }
